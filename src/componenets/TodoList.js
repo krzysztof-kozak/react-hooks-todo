@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
 import { useFilter } from "../hooks";
+import defaultTodos from "../data/defaultTodos.json";
 
 const TodoList = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(defaultTodos);
   const [filter, setfilter] = useFilter("all");
   const [completeAll, setCompleteAll] = useState(true);
 

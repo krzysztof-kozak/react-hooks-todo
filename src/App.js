@@ -6,7 +6,7 @@ import "./styles.css";
 export default function App() {
   return (
     <div className="App">
-      <h1>To do App</h1>
+      <h1>Todo App: react hooks</h1>
       <TodoList />
     </div>
   );
