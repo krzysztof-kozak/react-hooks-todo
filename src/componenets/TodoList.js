@@ -18,8 +18,8 @@ const TodoList = () => {
   };
 
   const handleComplete = (id) => {
-    setTodos(
-      todos.map((todo) => {
+    setTodos((prevState) =>
+      prevState.map((todo) => {
         if (todo.id === id) {
           return { ...todo, completed: !todo.completed };
         } else {
